@@ -1,18 +1,12 @@
 @echo off
 
-:check_electron
-for /f "tokens=3 delims=" %%a in ('wmic process get name /format:list') do (
-  if /i "!%%a!" == "electron.exe" goto :electron_running
+:: Check if electron.exe is running
+tasklist /FI "IMAGENAME eq electron.exe" | findstr /i /c:"electron.exe" > nul
+
+:: If electron.exe is not running, start npm start silently
+if errorlevel 1 (
+    cd /d "%~dp0"
+    powershell -WindowStyle Hidden -Command "Start-Process npm -ArgumentList 'start' -NoNewWindow -WorkingDirectory '%CD%'"
 )
-echo Electron is not running. Starting application...
-if errorlevel 1 echo Error starting application: %errorlevel%
-npm start
-goto :done
 
-:electron_running
-echo Electron is already running.
-
-:done
-echo Done.
-pause
-endlocal
+exit /b
