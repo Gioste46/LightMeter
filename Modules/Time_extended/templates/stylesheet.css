@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* General styles */
+p {
+   margin: 0px;
+   color: rgba(235, 235, 235, 0.7);
+   user-select: none;
+}
+
+.draggable {
+   -webkit-app-region: drag;
+}
+
+/* Background */
+#background {
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: flex-end;
+
+   background: rgb(8, 33, 63);
+   background: linear-gradient(
+      90deg,
+      hsla(213, 77%, 14%, 1) 0%,
+      hsla(202, 27%, 45%, 1) 45%,
+      hsla(202, 27%, 45%, 1) 55%,
+      hsla(213, 77%, 14%, 1) 100%
+   );
+   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#08203E", endColorstr="#557C93", GradientType=1 );
+   height: 150px;
+   width: 150px;
+   border-radius: 15px;
+   resize: none;
+   overflow: hidden;
+}
+
+/* Time Wrapper */
+#TimeWrapper {
+   display: flex;
+   width: fit-content;
+   height: fit-content;
+   align-items: baseline;
+   padding-left: 15px;
+   padding-top: 3px;
+   padding-bottom: 35px;
+   z-index: 1;
+}
+
+/* Inner Wrapper */
+#InnerWrapper {
+   display: flex;
+   font-size: 45px;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 600;
+}
+
+/* Time AMPM */
+#TimeAMPM {
+   font-size: 10px;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 600;
+}
+
+/* Date Wrapper */
+#DateWrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-left: 10px;
+   width: fit-content;
+   max-width: 130px;
+   align-items: flex-end;
+   z-index: 2;
+}
+
+/* Name */
+#name {
+   font-size: 1.5rem;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 600;
+   width: fit-content;
+}
+
+/* Date */
+.date {
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 15px;
+   font-weight: 600;
+}
+
+/* Keyframe Animations */
+@keyframes slide-in-blurred-top {
+   0% {
+      transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      transform-origin: 50% 0;
+      filter: blur(40px);
+      opacity: 0;
+   }
+   100% {
+      transform: translateY(0) scaleY(1) scaleX(1);
+      transform-origin: 50% 50%;
+      filter: blur(0);
+      opacity: 1;
+   }
+}
+
+@keyframes slide-out-blurred-bottom {
+   0% {
+      transform: translateY(0) scaleY(1) scaleX(1);
+      transform-origin: 50% 50%;
+      filter: blur(0);
+      opacity: 1;
+   }
+   100% {
+      transform: translateY(1000px) scaleY(2) scaleX(0.2);
+      transform-origin: 50% 100%;
+      filter: blur(40px);
+      opacity: 0;
+   }
+}
+
+/* Slide-in and Slide-out Animation */
+.slide-in-blurred-top {
+   animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.slide-out-blurred-bottom {
+   animation: slide-out-blurred-bottom 0.45s
+      cubic-bezier(0.755, 0.05, 0.855, 0.06) both;
+}
