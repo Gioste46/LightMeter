@@ -6,7 +6,9 @@ LightMeter is a desktop application inspired by RainMeter, designed to provide a
 1. **Install Node.js:** Download and install Node.js from the  [official Node.js website](https://nodejs.org/en/download) following the provided instructions.
 2. **Download The latest release**: in the release section, download the latest release
 3. **Install dipendencies:** Run the `npm install` to install the necessary dependencies to run LightMeter
-4. **Run LightMeter:** Navigate to the project directory in your terminal and execute `npm start`. This will launch the Electron app and display the pre-installed widgets.
+4. **Run LightMeter:** Navigate to the directory where you extracted the file, and click in the directory search ![image](https://github.com/Gioste46/LightMeter/assets/140664876/18cd18dd-a3c6-47fc-a6ed-bf03147cb4d0) <br>
+ write CMD in the search field and a terminal will appear, in your terminal and execute `npm start`. This will launch the Electron app and display the pre-installed widgets.
+
 
 **Creating Custom Widgets**
 
