@@ -2,13 +2,15 @@
 LightMeter is a desktop application inspired by RainMeter, designed to provide a similar user experience with minimal resource usage on low-end devices. It achieves this by leveraging Electron for rendering widgets built purely with HTML5, CSS, and JavaScript. The application itself is also built on Electron, ensuring a lightweight footprint due to its Node.js foundation.
 
 **Getting Started**
-
 1. **Install Node.js:** Download and install Node.js from the  [official Node.js website](https://nodejs.org/en/download) following the provided instructions.
-2. **Download The latest release**: in the release section, download the latest release
-3. **Install dipendencies:** Run the `npm install` to install the necessary dependencies to run LightMeter
-4. **Run LightMeter:** Navigate to the directory where you extracted the file, and click in the directory search ![image](https://github.com/Gioste46/LightMeter/assets/140664876/18cd18dd-a3c6-47fc-a6ed-bf03147cb4d0) <br>
- write CMD in the search field and a terminal will appear, in your terminal and execute `npm start`. This will launch the Electron app and display the pre-installed widgets.
+3. **Download The latest release**: in the release section, download the latest release.
+5. **Install dipendencies:** Run the `npm install` to install the necessary dependencies to run LightMeter.
+7. **Run LightMeter:** duble click on the `start.bat` file (this will not show any window but should run the application).
 
+**Running the application on system startup**
+1. **Make a Shortcut:** Right click on the `start.bat` file, and select send to -> desktop (create shortcut).
+3. **Open Startup Folder:** Press `WIN+R` and enter `Shell:startup` then press `Enter`.
+5. **Drag & Drop:** Drag and Drop the shortcut you just made from your desktop in the folder that is should have open after running the `Shell:startup`.
 
 **Creating Custom Widgets**
 
