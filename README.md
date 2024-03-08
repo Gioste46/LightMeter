@@ -12,8 +12,7 @@ LightMeter is a desktop application inspired by RainMeter, designed to provide a
 3. **Open Startup Folder:** Press `WIN+R` and enter `Shell:startup` then press `Enter`.
 5. **Drag & Drop:** Drag and Drop the shortcut you just made from your desktop in the folder that is should have open after running the `Shell:startup`.
 
-**Creating Custom Widgets**
-
+# **Creating Custom Widgets** 
 LightMeter allows you to create custom widgets using familiar web technologies like HTML5, CSS, and JavaScript to suit your needs. In addition to pre-installed widgets, a sample widget is included to demonstrate the widget creation process:
 
 * **Templates folder (optional):** This folder helps organize your widget's CSS and JavaScript files, promoting a cleaner project structure.
@@ -30,8 +29,7 @@ To enable dragging and repositioning of your widget within LightMeter, incorpora
 }
 ```
 
-# Data.json File Structure and Guidelines
-
+### Data.json File Structure and Guidelines
 This document outlines the structure and guidelines for the `Data.json` file used in the LightMeter application. Adhering to these guidelines is crucial for the correct recognition and functionality of your module.
 
 ## File Structure
