@@ -4,3 +4,7 @@ div {
    height: 100px;
    background-color: gray;
 }
+
+.draggable {
+   -webkit-app-region: drag;
+}
