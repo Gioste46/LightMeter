@@ -3,7 +3,7 @@ LightMeter is a desktop application inspired by RainMeter, designed to provide a
 
 **Getting Started**
 1. **Install Node.js:** Download and install Node.js from the  [official Node.js website](https://nodejs.org/en/download) following the provided instructions.
-3. **Download The latest release**: in the release section, download the latest release.
+3. **Download The files**: on the top right, click on code -> Download ZIP
 5. **Install dipendencies:** Run the `npm install` to install the necessary dependencies to run LightMeter.
 7. **Run LightMeter:** duble click on the `start.bat` file (this will not show any window but should run the application).
 
