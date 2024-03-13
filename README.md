@@ -1,11 +1,23 @@
 # LightMeter
 LightMeter is a desktop application inspired by RainMeter, designed to provide a similar user experience with minimal resource usage on low-end devices. It achieves this by leveraging Electron for rendering widgets built purely with HTML5, CSS, and JavaScript. The application itself is also built on Electron, ensuring a lightweight footprint due to its Node.js foundation.
 
-**Getting Started**
+### Readme structure Tree
+- [Getting Started](#getting-started)
+- [How to create Custom Widgets](#creating-custom-widgets)
+  - [File Structure](#datajson-file-structure-and-guidelines)
+  - [Make the Widget get recognized by LightMeter](#lightmeter-module-recognition-criteria)
+    - [More settings on the Widget recognition](#optional-settings)
+- [Next Up](#next-up)
+
+### Getting Started
 1. **Install Node.js:** Download and install Node.js from the  [official Node.js website](https://nodejs.org/en/download) following the provided instructions.
 3. **Download The files**: on the top right, click on code -> Download ZIP
 5. **Install dipendencies:** Run the `npm install` to install the necessary dependencies to run LightMeter.
-7. **Run LightMeter:** duble click on the `start.bat` file (this will not show any window but should run the application).
+7. **Run LightMeter:** duble click on the `start.bat` file. (the application controls are in the task bar)
+
+![image](https://github.com/Gioste46/LightMeter/assets/140664876/c2f72046-da47-4e24-b5db-a700cb4d500e)
+![image](https://github.com/Gioste46/LightMeter/assets/140664876/2f9575a7-84f8-4946-b18a-67c9307dedb2)
+![image](https://github.com/Gioste46/LightMeter/assets/140664876/705dbaba-563f-420d-9915-8e080eab6510)
 
 **Running the application on system startup**
 1. **Make a Shortcut:** Right click on the `start.bat` file, and select `send to -> desktop (create shortcut)`.
@@ -33,11 +45,11 @@ To enable dragging and repositioning of your widget within LightMeter, incorpora
 }
 ```
 
-### Data.json File Structure and Guidelines
-This document outlines the structure and guidelines for the `Data.json` file used in the LightMeter application. Adhering to these guidelines is crucial for the correct recognition and functionality of your module.
 
 ## File Structure
 
+### Data.json File Structure and Guidelines
+This document outlines the structure and guidelines for the `Data.json` file used in the LightMeter application. Adhering to these guidelines is crucial for the correct recognition and functionality of your module.
 Upon opening the `Data.json` file, you will encounter a JSON format similar to the one below:
 
 ```json
@@ -83,3 +95,7 @@ To ensure that LightMeter recognizes your module correctly, follow these criteri
 - ```"openMaximized"```: This setting is used to maximize the window. It does not affect the functionality of the widgets themselves, but if you used other logic to move the widget around the window you might need the window to be maximized.
 - ```Xpos``` and ```Ypos``` settings should __not__ be touched. These define where the window opens up on the screen. These values automatically update when you quit the application trought the "exit" button located on the tray icon; after moving the widgets, if you Alt+F4 the application or kill it's process, you will lose the position you just gave them and will have to reposition them again.
 - ```"doLoad": true```: Use this setting in case you might want your widget not to be loaded from the application.
+
+# Next Up
+I'm developing this application alone, so is proceding pretty slowly with the developement, right now im focussing on adding more Widgets so that the end user can have the Experience most suitable for them.
+Next up on the project list is adding a UI interface, so that i can remove the horrible menu' in the task bar
