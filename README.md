@@ -8,9 +8,13 @@ LightMeter is a desktop application inspired by RainMeter, designed to provide a
 7. **Run LightMeter:** duble click on the `start.bat` file (this will not show any window but should run the application).
 
 **Running the application on system startup**
-1. **Make a Shortcut:** Right click on the `start.bat` file, and select send to -> desktop (create shortcut).
+1. **Make a Shortcut:** Right click on the `start.bat` file, and select `send to -> desktop (create shortcut)`.
 3. **Open Startup Folder:** Press `WIN+R` and enter `Shell:startup` then press `Enter`.
 5. **Drag & Drop:** Drag and Drop the shortcut you just made from your desktop in the folder that is should have open after running the `Shell:startup`.
+
+**Installing Widgets**
+1. **Download or Create the widget:** First you have to create or download a Widget somewhere
+3. **Enable the Widget:** Copy the Widget in the `Modules` folder, and check that the `"doLoad"` is set to `true` in the `Data.json` file
 
 # **Creating Custom Widgets** 
 LightMeter allows you to create custom widgets using familiar web technologies like HTML5, CSS, and JavaScript to suit your needs. In addition to pre-installed widgets, a sample widget is included to demonstrate the widget creation process:
