@@ -1,7 +1,7 @@
 # LightMeter
 LightMeter is a desktop application inspired by RainMeter, designed to provide a similar user experience with minimal resource usage on low-end devices. It achieves this by leveraging Electron for rendering widgets built purely with HTML5, CSS, and JavaScript. The application itself is also built on Electron, ensuring a lightweight footprint due to its Node.js foundation.
 
-### Readme structure Tree
+### Repo Tree
 - [Getting Started](#getting-started)
 - [How to create Custom Widgets](#creating-custom-widgets)
   - [File Structure](#datajson-file-structure-and-guidelines)
