@@ -1,4 +1,4 @@
-# LightMeter
+# LightMeter (Discontinued)
 LightMeter is a desktop application inspired by RainMeter, designed to provide a similar user experience with minimal resource usage on low-end devices. It achieves this by leveraging Electron for rendering widgets built purely with HTML5, CSS, and JavaScript. The application itself is also built on Electron, ensuring a lightweight footprint due to its Node.js foundation.
 
 ### Repo Tree
@@ -96,6 +96,6 @@ To ensure that LightMeter recognizes your module correctly, follow these criteri
 - ```Xpos``` and ```Ypos``` settings should __not__ be touched. These define where the window opens up on the screen. These values automatically update when you quit the application trought the "exit" button located on the tray icon; after moving the widgets, if you Alt+F4 the application or kill it's process, you will lose the position you just gave them and will have to reposition them again.
 - ```"doLoad": true```: Use this setting in case you might want your widget not to be loaded from the application.
 
-# Next Up (discontinued)
+# Next Up
 I'm developing this application alone, so is proceding pretty slowly with the developement, right now im focussing on adding more Widgets so that the end user can have the Experience most suitable for them.
 Next up on the project list is adding a UI interface, so that i can remove the horrible menu' in the task bar
